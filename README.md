@@ -1,4 +1,6 @@
-Final Goal:
+<h1>Project in progress.</h1>
+
+<b>Final Goal:</b>
 <ul>
     <li>User registration</li>
     <li>Users can add multiple accounts of google drive and one drive.</li>
