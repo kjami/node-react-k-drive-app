@@ -4,8 +4,9 @@
   "description": "Final Goal: <ul>     <li>User registration</li>     <li>Users can add multiple accounts of google drive and one drive.</li>     <li>List down all the files from all the drives that were added.</li>     <li>Users can navigate to different files and folders.</li>     <li>Users can copy/paste from one account to another account.</li>     <li>Support multipart upload.</li> </ul>",
   "main": "index.js",
   "scripts": {
+    "begin": "npm install && cd client && npm install",
     "client": "cd client && npm start",
-    "server": "env-cmd -f ./config/dev.env nodemon server/src/index.js",
+    "server": "env-cmd -f ./config/dev.env nodemon server/src/index.js -e js",
     "start": "node server/src/index.js",
     "test": "env-cmd -f ./config/test.env jest --runInBand --watch",
     "dev": "concurrently \"npm run client\" \"npm run server\""
